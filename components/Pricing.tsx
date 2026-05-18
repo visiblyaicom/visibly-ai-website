@@ -2,6 +2,18 @@
 
 import { useState } from 'react'
 
+// ---------------------------------------------------------------------------
+// Fill in Stripe Payment Link URLs after creating them in the Stripe dashboard.
+// Each link must have metadata: plan=pro (or plan=agency)
+// Success URL on each link: https://web-production-8f080.up.railway.app/v1/success?session_id={CHECKOUT_SESSION_ID}
+// ---------------------------------------------------------------------------
+const STRIPE_LINKS = {
+  proMonthly:    'https://buy.stripe.com/cNi5kC5TC7Bg8CD2FBcIE00',
+  proAnnual:     'https://buy.stripe.com/4gMdR8gyg5t83ij5RNcIE01',
+  agencyMonthly: 'https://buy.stripe.com/00wbJ0dm46xc2ef7ZVcIE02',
+  agencyAnnual:  'https://buy.stripe.com/9B6bJ06XGdZE5qr7ZVcIE03',
+}
+
 const PLANS = [
   {
     name: 'Free',
@@ -9,7 +21,8 @@ const PLANS = [
     yearly: 0,
     description: 'The full free plugin. No account required.',
     cta: 'Install Free Plugin',
-    ctaHref: 'https://wordpress.org/plugins/visibly-ai/',
+    ctaHrefMonthly: 'https://github.com/visiblyaicom/visibly-ai-plugin/releases/download/v1.2.0/visibly-ai-v1.2.0.zip',
+    ctaHrefAnnual:  'https://github.com/visiblyaicom/visibly-ai-plugin/releases/download/v1.2.0/visibly-ai-v1.2.0.zip',
     highlighted: false,
     features: [
       'llms.txt auto-generator',
@@ -27,7 +40,8 @@ const PLANS = [
     yearly: 149,
     description: 'For content creators who want AI-powered recommendations.',
     cta: 'Get Pro',
-    ctaHref: '#',
+    ctaHrefMonthly: STRIPE_LINKS.proMonthly,
+    ctaHrefAnnual:  STRIPE_LINKS.proAnnual,
     highlighted: true,
     badge: 'Most popular',
     features: [
@@ -46,7 +60,8 @@ const PLANS = [
     yearly: 399,
     description: 'For agencies and teams managing multiple client sites.',
     cta: 'Get Agency',
-    ctaHref: '#',
+    ctaHrefMonthly: STRIPE_LINKS.agencyMonthly,
+    ctaHrefAnnual:  STRIPE_LINKS.agencyAnnual,
     highlighted: false,
     features: [
       'Everything in Pro',
@@ -142,7 +157,7 @@ export default function Pricing() {
               </ul>
 
               <a
-                href={plan.ctaHref}
+                href={annual ? plan.ctaHrefAnnual : plan.ctaHrefMonthly}
                 className={`block text-center py-3 px-6 rounded-xl font-semibold text-sm transition-colors ${
                   plan.highlighted
                     ? 'bg-brand-red text-white hover:bg-brand-red-dark'
