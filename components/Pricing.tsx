@@ -21,8 +21,8 @@ const PLANS = [
     yearly: 0,
     description: 'The full free plugin. No account required.',
     cta: 'Install Free Plugin',
-    ctaHrefMonthly: 'https://github.com/visiblyaicom/visibly-ai-plugin/releases/download/v1.2.0/visibly-ai-v1.2.0.zip',
-    ctaHrefAnnual:  'https://github.com/visiblyaicom/visibly-ai-plugin/releases/download/v1.2.0/visibly-ai-v1.2.0.zip',
+    ctaHrefMonthly: 'https://wordpress.org/plugins/visibly-ai/',
+    ctaHrefAnnual:  'https://wordpress.org/plugins/visibly-ai/',
     highlighted: false,
     features: [
       'llms.txt auto-generator',
