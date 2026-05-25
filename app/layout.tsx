@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Visibly AI — SEO for the AI Search Era',
   description: 'Optimize your WordPress content for Google, ChatGPT Search, and Perplexity. llms.txt, schema markup, AI-powered suggestions, and GSC insights — all in one plugin.',
   metadataBase: new URL('https://www.getvisiblyai.com'),
+  verification: {
+    google: 'TiDYTAeZ4mAJ8ogLj2_2k2tIlaujyViqhEOpJvwncEE',
+  },
   openGraph: {
     title: 'Visibly AI — SEO for the AI Search Era',
     description: 'Optimize your content for Google and AI answer engines. Free WordPress plugin.',
