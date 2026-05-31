@@ -45,7 +45,7 @@ const PRO_FEATURES = [
       </svg>
     ),
     title: 'AI Content Optimizer',
-    description: 'Claude reads your post, sees your failing signals, and writes the exact text to add. Not generic tips — actual sentences and definitions you can paste in.',
+    description: 'Works on any post, instantly — no setup needed. Claude reads your content, checks your failing signals, and writes the exact text to add. Not generic tips — actual sentences and definitions you can paste in.',
   },
   {
     icon: (
@@ -54,7 +54,7 @@ const PRO_FEATURES = [
       </svg>
     ),
     title: 'GSC Keyword Insights',
-    description: 'Connect Google Search Console and see per-post which queries you\'re close to page 1 for, which have low CTR, and exactly what to change to break through.',
+    description: 'Optional but powerful. Connect Google Search Console and see per-post which queries are close to page 1, which have low CTR, and exactly what to fix. Best for posts that already have ranking history.',
   },
   {
     icon: (
@@ -63,7 +63,7 @@ const PRO_FEATURES = [
       </svg>
     ),
     title: 'AI + GSC Combined',
-    description: '"You rank #14 for \'what is X\' with 0.8% CTR — here\'s the definition to add that will help AI engines surface your answer." Specific. Actionable. Per post.',
+    description: 'When GSC is connected, AI suggestions become query-specific: "You rank #14 for \'what is X\' — here\'s the exact definition to add." No GSC? AI still works great — GSC just makes it sharper.',
   },
 ]
 
@@ -99,7 +99,7 @@ export default function Features() {
             <span className="inline-block px-3 py-1 rounded-full bg-[#fde4e0] text-brand-red text-xs font-semibold uppercase tracking-wide mb-4 border border-[#fab0a6]">Pro</span>
             <h2 className="text-3xl font-extrabold text-white mb-4">AI that does the work for you</h2>
             <p className="text-white/50 leading-relaxed">
-              Connect Claude and Google Search Console. Get specific, copy-pasteable suggestions per post — not generic advice.
+              AI analysis works on any post the moment you install. Connect Google Search Console to unlock a second level — suggestions tailored to the exact queries you already rank for.
             </p>
           </div>
 
