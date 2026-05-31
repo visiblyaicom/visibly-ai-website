@@ -16,9 +16,10 @@ export default function Nav() {
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#features" className="text-sm text-[#6b7a94] hover:text-brand-navy transition-colors">Features</a>
-          <a href="#how-it-works" className="text-sm text-[#6b7a94] hover:text-brand-navy transition-colors">How it works</a>
-          <a href="#pricing" className="text-sm text-[#6b7a94] hover:text-brand-navy transition-colors">Pricing</a>
+          <a href="/#features" className="text-sm text-[#6b7a94] hover:text-brand-navy transition-colors">Features</a>
+          <a href="/#how-it-works" className="text-sm text-[#6b7a94] hover:text-brand-navy transition-colors">How it works</a>
+          <a href="/#pricing" className="text-sm text-[#6b7a94] hover:text-brand-navy transition-colors">Pricing</a>
+          <a href="/blog" className="text-sm text-[#6b7a94] hover:text-brand-navy transition-colors">Blog</a>
         </div>
 
         {/* Desktop CTAs */}
@@ -55,9 +56,10 @@ export default function Nav() {
       {/* Mobile menu */}
       {mobileOpen && (
         <div className="md:hidden border-t border-brand-offwhite bg-white px-6 py-4 space-y-3">
-          <a href="#features" className="block text-sm text-[#5a6f87] hover:text-brand-navy" onClick={() => setMobileOpen(false)}>Features</a>
-          <a href="#how-it-works" className="block text-sm text-[#5a6f87] hover:text-brand-navy" onClick={() => setMobileOpen(false)}>How it works</a>
-          <a href="#pricing" className="block text-sm text-[#5a6f87] hover:text-brand-navy" onClick={() => setMobileOpen(false)}>Pricing</a>
+          <a href="/#features" className="block text-sm text-[#5a6f87] hover:text-brand-navy" onClick={() => setMobileOpen(false)}>Features</a>
+          <a href="/#how-it-works" className="block text-sm text-[#5a6f87] hover:text-brand-navy" onClick={() => setMobileOpen(false)}>How it works</a>
+          <a href="/#pricing" className="block text-sm text-[#5a6f87] hover:text-brand-navy" onClick={() => setMobileOpen(false)}>Pricing</a>
+          <a href="/blog" className="block text-sm text-[#5a6f87] hover:text-brand-navy" onClick={() => setMobileOpen(false)}>Blog</a>
           <div className="pt-2 border-t border-brand-offwhite flex gap-3">
             <a href="https://wordpress.org/plugins/visibly-ai/" className="text-sm font-medium text-[#5a6f87]">Free Plugin</a>
             <a href="#pricing" className="text-sm font-semibold px-4 py-2 rounded-lg bg-brand-red text-white">Get Pro</a>

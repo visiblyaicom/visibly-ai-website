@@ -11,10 +11,11 @@ export default function Footer() {
 
           {/* Links */}
           <nav className="flex items-center gap-6 text-sm text-white/50">
-            <a href="#features" className="hover:text-white transition-colors">Features</a>
-            <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
+            <a href="/#features" className="hover:text-white transition-colors">Features</a>
+            <a href="/#pricing" className="hover:text-white transition-colors">Pricing</a>
+            <a href="/blog" className="hover:text-white transition-colors">Blog</a>
             <a href="https://wordpress.org/plugins/visibly-ai/" className="hover:text-white transition-colors">Free Plugin</a>
-            <a href="mailto:hello@visiblyai.com" className="hover:text-white transition-colors">Contact</a>
+            <a href="mailto:hello@getvisiblyai.com" className="hover:text-white transition-colors">Contact</a>
           </nav>
 
           {/* Legal */}
