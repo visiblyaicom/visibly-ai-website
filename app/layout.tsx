@@ -17,11 +17,13 @@ export const metadata: Metadata = {
     url: 'https://www.getvisiblyai.com',
     siteName: 'Visibly AI',
     type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Visibly AI — SEO for the AI Search Era' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Visibly AI — SEO for the AI Search Era',
     description: 'Optimize your content for Google and AI answer engines. Free WordPress plugin.',
+    images: ['/og-image.png'],
   },
 }
 
