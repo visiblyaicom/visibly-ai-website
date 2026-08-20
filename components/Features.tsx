@@ -55,6 +55,7 @@ const PRO_FEATURES = [
     ),
     title: 'GSC Keyword Insights',
     description: 'Optional but powerful. Connect Google Search Console and see per-post which queries are close to page 1, which have low CTR, and exactly what to fix. Best for posts that already have ranking history.',
+    learnMore: '/blog/google-search-console-integration',
   },
   {
     icon: (
@@ -63,7 +64,7 @@ const PRO_FEATURES = [
       </svg>
     ),
     title: 'AI + GSC Combined',
-    description: 'When GSC is connected, AI suggestions become query-specific: "You rank #14 for \'what is X\' — here\'s the exact definition to add." No GSC? AI still works great — GSC just makes it sharper.',
+    description: 'Two levels: (1) signal-based analysis works immediately on any post — no setup needed. (2) Connect GSC and suggestions become query-specific: "You rank #14 for \'what is X\' — here\'s the exact fix." GSC is optional. Level 1 alone is valuable.',
   },
 ]
 
@@ -111,6 +112,9 @@ export default function Features() {
                 </div>
                 <h3 className="font-semibold text-white mb-2">{f.title}</h3>
                 <p className="text-sm text-white/50 leading-relaxed">{f.description}</p>
+                {f.learnMore && (
+                  <a href={f.learnMore} className="inline-block mt-3 text-xs text-brand-blue hover:underline">Learn more →</a>
+                )}
               </div>
             ))}
           </div>

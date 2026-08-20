@@ -67,20 +67,22 @@ export default function Hero() {
           </div>
           <div className="p-5">
             <div className="text-center mb-4">
-              <div className="text-5xl font-bold text-brand-blue leading-none">78</div>
+              <div className="text-5xl font-bold text-brand-blue leading-none">100</div>
               <div className="text-xs text-[#8e9eb5] mt-1">/ 100</div>
               <div className="mt-2 inline-block px-3 py-0.5 rounded-full bg-green-100 text-green-700 text-xs font-semibold">Good</div>
             </div>
             <div className="space-y-2 text-xs">
               {[
-                { label: 'Question-format heading', pass: true, pts: 20 },
-                { label: 'Short answer after question', pass: true, pts: 15 },
-                { label: 'FAQ schema attached', pass: true, pts: 15 },
+                { label: 'Question-format heading', pass: true, pts: 15 },
+                { label: 'Short answer after question', pass: true, pts: 12 },
+                { label: 'FAQ schema attached', pass: true, pts: 12 },
                 { label: 'Intro paragraph ≤100 words', pass: true, pts: 10 },
                 { label: 'Clean heading hierarchy', pass: true, pts: 10 },
-                { label: 'Word count 300–1500', pass: false, pts: 10 },
-                { label: 'Meta description present', pass: false, pts: 10 },
-                { label: 'Defined terms', pass: false, pts: 10 },
+                { label: 'Word count 300–1500', pass: true, pts: 10 },
+                { label: 'Meta description present', pass: true, pts: 10 },
+                { label: 'Defined terms', pass: true, pts: 9 },
+                { label: 'Table or comparison format', pass: true, pts: 7 },
+                { label: 'Author bio present', pass: true, pts: 5 },
               ].map((s) => (
                 <div key={s.label} className="flex items-center justify-between py-1.5 border-b border-brand-offwhite last:border-0">
                   <span className="flex items-center gap-1.5">
