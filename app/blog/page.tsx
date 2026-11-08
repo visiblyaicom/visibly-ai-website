@@ -80,7 +80,7 @@ export default function BlogIndex() {
               Score your content for AI citation — free
             </h2>
             <p className="text-white/60 mb-8 max-w-md mx-auto">
-              Visibly AI checks all 8 AEO signals in your Gutenberg sidebar as you write. No API key needed.
+              Visibly AI checks all 10 AEO signals in your Gutenberg sidebar as you write. No API key needed.
             </p>
             <a
               href="https://wordpress.org/plugins/visibly-ai/"

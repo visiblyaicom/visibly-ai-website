@@ -1,5 +1,6 @@
 import { getPost, getAllPosts, formatDate } from '@/lib/blog'
 import Nav from '@/components/Nav'
+import EmailCapture from '@/components/EmailCapture'
 import Footer from '@/components/Footer'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
@@ -108,7 +109,7 @@ export default async function BlogPost({ params }: Props) {
                 Score your content for AI citation — free
               </h2>
               <p className="text-white/60 mb-6 text-sm max-w-sm mx-auto">
-                Visibly AI checks all 8 AEO signals in your Gutenberg sidebar as you write.
+                Visibly AI checks all 10 AEO signals in your Gutenberg sidebar as you write.
               </p>
               <a
                 href="https://wordpress.org/plugins/visibly-ai/"
@@ -119,6 +120,8 @@ export default async function BlogPost({ params }: Props) {
             </div>
           </div>
         </section>
+
+        <EmailCapture source="blog" />
       </main>
       <Footer />
     </>

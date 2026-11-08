@@ -8,7 +8,7 @@ const STEPS = [
   {
     number: '02',
     title: 'See your Visibility Score',
-    description: 'Open any post in Gutenberg. The Visibly AI sidebar shows your score out of 100 with a breakdown of all 8 signals — and exactly what to fix for each one.',
+    description: 'Open any post in Gutenberg. The Visibly AI sidebar shows your score out of 100 with a breakdown of all 10 signals — and exactly what to fix for each one.',
     note: 'Instant, per post',
   },
   {

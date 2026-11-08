@@ -27,7 +27,7 @@ const PLANS = [
     features: [
       'llms.txt auto-generator',
       'Schema markup wizard (FAQ, HowTo, Article)',
-      'Visibility scorer — 8 signals, 0–100',
+      'Visibility scorer — 10 signals, 0–100',
       'Meta description editor',
       'Gutenberg sidebar integration',
       'Unlimited posts',

@@ -4,6 +4,7 @@ import Features from '@/components/Features'
 import HowItWorks from '@/components/HowItWorks'
 import Pricing from '@/components/Pricing'
 import CTABanner from '@/components/CTABanner'
+import EmailCapture from '@/components/EmailCapture'
 import Footer from '@/components/Footer'
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <Features />
         <HowItWorks />
         <Pricing />
+        <EmailCapture source="homepage" />
         <CTABanner />
       </main>
       <Footer />
